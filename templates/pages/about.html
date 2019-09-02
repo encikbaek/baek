@@ -1,0 +1,63 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<div class="main-container">
+    <section class="switchable feature-large space--xxs">
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-md-6"> <img alt="Image" class="border--round box-shadow-wide" src="{% static 'img/BaekFactor.jpg' %}"> </div>
+                <div class="col-md-6 col-lg-5">
+                    <div class="switchable__text">
+                        <h2>Hi, we're baekfactor</h2>
+                        <p class="lead"> An innovative collective of like-minded folks making useful and enduring technology products. Hire us to help you on what you need, when you need and for as long as you need us. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="process-1">
+                        <div class="process__item">
+                            <h4>Company established 2019<br>start by young entrepreneur</h4>
+                            <p>Baekfactor is your friendly IT partner offering solutions on web application development and system integrator for network security and data protection</p>
+                        </div>
+                        <div class="process__item">
+                            <h4>Focus on web application development and Internet of Thing</h4>
+                            <p>From an idea on ease-of-use to compiling data for organisation usage. Solutions design by our internal dedicated multitalented team. Varies of experience to solve problem thats need system.</p>
+                        </div>
+                        <div class="process__item">
+                            <h4>The used of experience<br> by our professional</h4>
+                            <p>A group of experience people team up to provide their skill on system integration. Each have own capability in their own field in the industries.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature feature-3 boxed boxed--lg boxed--border"> <i class="icon icon-Brain icon--lg"></i>
+                        <h4>Strategy</h4>
+                        <p> We hear and consult. We do requirement study upon receive your issue and require to improve it in some way better than present </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature feature-3 boxed boxed--lg boxed--border"> <i class="icon icon-Power-3 icon--lg"></i>
+                        <h4>Execution</h4>
+                        <p> We tackle built and deploy. Based from requirement study and approval through proof of concept, our expertise engineer deliver accordingly as per said </p> 
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature feature-3 boxed boxed--lg boxed--border"> <i class="icon icon-Plaster icon--lg"></i>
+                        <h4>Support</h4>
+                        <p> We support and maintain it. Based on the deployment completion, we continue providing the documentation, support and services </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
