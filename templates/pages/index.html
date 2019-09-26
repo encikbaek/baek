@@ -5,7 +5,7 @@
         <section class="switchable space--sm">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-7 text-center"> <img alt="Image" src="{% static 'img/wedding-5.jpg' %}"> </div>
+                    <div class="col-md-7 text-center"> <img alt="Image" src="{% static 'img/baek.jpg' %}"> </div>
                     <div class="col-md-5">
                         <div class="switchable__text">
                             <h2>Premium, fast and minimalist</h2>
@@ -60,7 +60,7 @@
                         <div class="pricing pricing-1 boxed boxed--border boxed--lg text-center">
                             <h4>Discover More</h4> <span class="h1"><span>Data Protection</span></span>
                             <p> key to prevent before too late. Lost of data or system failure can paralyzed your organization. </p> <span class="label">hello</span>
-                            <a class="btn btn--primary" href="#purchase-template"> <span class="btn__text">
+                            <a class="btn btn--primary" href="#baek"> <span class="btn__text">
                         SCHEDULE AN APPOINTMENT</span> </a>
                         </div>
                     </div>
@@ -110,10 +110,11 @@
                         <p class="lead"> We are open from 9am — 5pm week days. </p>
                     </div>
                     <div class="col-md-6 col-12">
-                        <form class="form-email row mx-0" data-success="Thanks for your enquiry, we'll be in touch shortly." data-error="Please fill in all fields correctly." data-success-redirect="https://www.baek.tech">
+                        <form action="{% url 'contact' %}" class="form-email row mx-0"  data-error="Please fill in all fields correctly." data-success="Thanks for your enquiry, we'll be in touch shortly." data-success-redirect="https://www.baek.tech" success-redirect="/">
+                        {% csrf_token %}
                             <div class="col-md-6 col-12"> <label>Your Name:</label> <input type="text" name="name" class="validate-required"> </div>
                             <div class="col-md-6 col-12"> <label>Email Address:</label> <input type="email" name="email" class="validate-required validate-email"> </div>
-                            <div class="col-md-12 col-12"> <label>Message:</label> <textarea rows="4" name="Message" class="validate-required"></textarea> </div>
+                            <div class="col-md-12 col-12"> <label>Message:</label> <textarea rows="4" name="message" class="validate-required"></textarea> </div>
                             <div class="col-md-5 col-lg-4 col-6"> <button type="submit" class="btn btn--primary type--uppercase">Send Enquiry</button> </div>
                         </form>
                     </div>
@@ -130,7 +131,7 @@
                         <div class="feature"> <img alt="Image" src="{% static 'img/Acronis.png' %}" class="border--round"> </div>
                     </div>
                     <div class="col-md-1">
-                        <div class="feature"> <img alt="Image" src="{% static 'img/Kaspersky.png' %}" class="border--round"> </div>
+                        <div class="feature"> <img alt="Image" src="{% static 'img/TrendMicro.png' %}" class="border--round"> </div>
                     </div>
                 </div>
             </div>
